@@ -13,6 +13,28 @@
 - **PaizaCloud(paiza)のアカウントを事前に作成しておいてもらう**
   - https://paiza.cloud/ にアクセスし、アカウント登録を済ませください。
 
+### PaizaCloudアカウント登録手順
+
+1. 最初の画面で「無料会員登録」をクリック
+
+   ![PaizaCloud 会員登録](/paizacloud/paiza_0001.png)
+
+2. アカウント作成を図の通り行う(Gmailアドレスでの作成でOK)
+
+   ![PaizaCloud アカウント作成](/paizacloud/paiza_0002.png)
+
+3. サーバーは「無料プラン」を選択
+
+   ![PaizaCloud 無料プラン選択](/paizacloud/paiza_0003.png)
+
+4. サーバー設定は図の通り選択する
+
+   ![PaizaCloud サーバー設定](/paizacloud/paiza_0004.png)
+
+5. 作成後、この画面が表示されればOK
+
+   ![PaizaCloud 作成完了画面](/paizacloud/paiza_0005.png)
+
 ---
 
 ## 構成(30〜40分)
