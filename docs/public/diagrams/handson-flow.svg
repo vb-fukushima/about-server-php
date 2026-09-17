@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif">
+  <defs>
+    <marker id="hf-arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="hf-arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="460" fill="#ffffff" rx="12"/>
+
+  <!-- ① ページを開く -->
+  <text x="20" y="28" font-size="16" fill="#0f172a" font-weight="bold">① まず index.php にアクセスする(GET)</text>
+
+  <rect x="15" y="45" width="190" height="90" rx="10" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+  <text x="110" y="82" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">クライアント</text>
+  <text x="110" y="103" text-anchor="middle" font-size="12" fill="#334155">(ブラウザ)</text>
+
+  <rect x="435" y="45" width="190" height="90" rx="10" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+  <text x="530" y="82" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">サーバー</text>
+  <text x="530" y="103" text-anchor="middle" font-size="12" fill="#334155">(index.php)</text>
+
+  <line x1="210" y1="68" x2="430" y2="68" stroke="#2563eb" stroke-width="3" marker-end="url(#hf-arrow-blue)"/>
+  <text x="320" y="62" text-anchor="middle" font-size="12" fill="#2563eb" font-weight="bold">GET index.php にアクセス</text>
+
+  <line x1="430" y1="112" x2="210" y2="112" stroke="#16a34a" stroke-width="3" marker-end="url(#hf-arrow-green)"/>
+  <text x="320" y="130" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="bold">レスポンス: フォームのHTML</text>
+
+  <line x1="20" y1="160" x2="620" y2="160" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- ② フォームを送信する -->
+  <text x="20" y="200" font-size="16" fill="#0f172a" font-weight="bold">② フォームに入力して送信する(POST)</text>
+
+  <rect x="15" y="217" width="190" height="90" rx="10" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+  <text x="110" y="254" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">クライアント</text>
+  <text x="110" y="275" text-anchor="middle" font-size="12" fill="#334155">(ブラウザ)</text>
+
+  <rect x="435" y="217" width="190" height="90" rx="10" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+  <text x="530" y="254" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">サーバー</text>
+  <text x="530" y="275" text-anchor="middle" font-size="12" fill="#334155">(contact.php)</text>
+
+  <line x1="210" y1="240" x2="430" y2="240" stroke="#2563eb" stroke-width="3" marker-end="url(#hf-arrow-blue)"/>
+  <text x="320" y="234" text-anchor="middle" font-size="12" fill="#2563eb" font-weight="bold">POST contact.php (お名前・メール)</text>
+
+  <line x1="430" y1="284" x2="210" y2="284" stroke="#16a34a" stroke-width="3" marker-end="url(#hf-arrow-green)"/>
+  <text x="320" y="302" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="bold">レスポンス: 挨拶文のHTML</text>
+
+  <text x="20" y="345" font-size="13" fill="#475569">contact.phpの中では、$_POST['name'] でデータを受け取り、</text>
+  <text x="20" y="365" font-size="13" fill="#475569">echoで組み立てたHTMLをレスポンスとして返しています。</text>
+</svg>
